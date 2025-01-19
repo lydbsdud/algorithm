@@ -5,7 +5,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         for(int i=1;i<=n;i++){
-            for(int t=1;t<=(2*n+1);t++){
+            for(int t=1;t<=(2*(i-1)+1);t++){
                 System.out.print('*');
             }
             System.out.println();
