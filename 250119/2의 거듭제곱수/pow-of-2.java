@@ -6,13 +6,11 @@ public class Main {
         int a=1;
         int N = sc.nextInt();
         for(int i=1;i<=10;i++){
-            for(int t=1;t<=i;t++){
-                a*=2;
-                if(a==N){
-                System.out.print(i);
-                break;
-            }
-            }
+            a*=2;
+            if(a==N){
+            System.out.print(i);
+            break;
+            }   
         }
     }
 }
