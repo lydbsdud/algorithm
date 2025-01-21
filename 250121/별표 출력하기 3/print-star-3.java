@@ -8,7 +8,7 @@ public class Main {
         for(int x=0;x<2*i;x++){
             System.out.print(" ");
         }
-        for(int t=0;t<9-2*i;t++){
+        for(int t=0;t<2*n-1-2*i;t++){
             System.out.print("* ");
         }
         System.out.println();
