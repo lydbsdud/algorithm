@@ -12,10 +12,10 @@ public class Main {
         }
         double avg = (double)sum/n;
         System.out.printf("%.1f\n",avg);
-        if(avg>4){
+        if(avg>=4){
             System.out.print("Perfect");
         }
-        else if(avg>3){
+        else if(avg>=3){
             System.out.print("Good");
         }
         else{
