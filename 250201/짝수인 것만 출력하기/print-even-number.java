@@ -5,11 +5,16 @@ public class Main {
         Scanner sc = new Scanner (System.in);
         int n = sc.nextInt();
         int arr[] = new int[10];
+        int j = 0;
         for(int i=0; i<n;i++){
-            arr[i] = sc.nextInt();
-            if(arr[i]%2==0){
-                System.out.print(arr[i]+" ");
+            int x = sc.nextInt();
+            if(x%2==0){
+                arr[j]=x;
+                j++;
             }
+        }
+        for(int i=0;i<j;i++){
+            System.out.print(arr[i]+" ");
         }
     }
 }
