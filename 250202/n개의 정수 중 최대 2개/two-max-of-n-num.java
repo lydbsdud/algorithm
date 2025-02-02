@@ -15,7 +15,9 @@ public class Main {
                 max=arr[i];
                 idx = i;
             }
-            if(max2<arr[i]&& arr[i]<=max&& idx!=i){
+        }
+        for(int i=0;i<n;i++){
+            if(max2<arr[i]&& arr[i]<=max && idx!=i){
                 max2=arr[i];
             }
         }
