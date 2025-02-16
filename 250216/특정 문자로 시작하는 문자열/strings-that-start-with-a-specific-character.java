@@ -14,12 +14,12 @@ public class Main {
         for(int i=0;i<n;i++){
             if(arr[i].charAt(0)==x){
                 aCount++;
-            }
-            for(int j=0;j<arr[i].length();j++){
+                for(int j=0;j<arr[i].length();j++){
                 count++;
+                }
             }
         }
-        double avg = count/n;
+        double avg = (double)count/aCount;
         System.out.printf("%d %.2f",aCount,avg);
     }
 }
