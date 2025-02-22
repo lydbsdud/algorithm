@@ -21,7 +21,10 @@ public class Main {
             arr2[t]=arr[i];
             arr3[t]=(char)count;
             t++;
-            if(count>=10){
+            if(count>=100){
+                plus+=2;
+            }
+            else if(count>=10){
                 plus++;
             }
             count=1;
