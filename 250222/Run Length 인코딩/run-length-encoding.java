@@ -3,9 +3,9 @@ public class Main {
     public static void main(String[] args) {
         // Please write your code here.
         Scanner sc = new Scanner(System.in);
-        char[] arr= new char[100];
-        char[] arr2= new char[100];
-        int[] arr3= new int[100];
+        char[] arr= new char[1001];
+        char[] arr2= new char[1001];
+        int[] arr3= new int[1001];
         String st = sc.next();
         int count=1;
         int plus =0;
