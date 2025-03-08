@@ -4,6 +4,7 @@ public class Main {
         // Please write your code here.
         Scanner sc = new Scanner(System.in);
         String st = sc.next();
+        String str ="";
         int len = st.length();
         int n = sc.nextInt();
         for(int i=0;i<n;i++){
@@ -17,11 +18,12 @@ public class Main {
                 System.out.println(st);
             }
             else if(k==3){
-                for(int t=n-1;t>=0;t--){
-                    st+=st.substring(t,t+1);
+                str = st.substring(len-1);
+                for(int t=len-2;t>=0;t--){
+                    str+=st.substring(t,t+1);
                 } 
-                st = st.substring(len);
-                System.out.println(st);
+                st=str;
+                System.out.println(str);
             }
         }
     }
