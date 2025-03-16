@@ -7,6 +7,9 @@ public class Main {
                 return false;
             }
         }
+        if(n==1){
+            return true;
+        }
         return true;
     }
     public static void main(String[] args) {
