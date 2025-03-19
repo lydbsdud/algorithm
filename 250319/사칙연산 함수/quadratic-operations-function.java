@@ -13,7 +13,7 @@ public class Main {
         else if(c=='*'){
             return a*b;
         }
-        return 0;   
+        return 100000;   
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -22,6 +22,11 @@ public class Main {
         int c = sc.nextInt();
         // Please write your code here.
         int result = cal(a,c,o);
-        System.out.print(a+" "+o+" "+c+" = "+result);
+        if(result==100000){
+            System.out.print("False");
+        }
+        else{
+            System.out.print(a+" "+o+" "+c+" = "+result);
+        }
     }
 }
