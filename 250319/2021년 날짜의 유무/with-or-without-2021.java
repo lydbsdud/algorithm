@@ -11,7 +11,7 @@ public class Main {
                 return true;
             }
         }
-        if(m==4||m==6||m==9){
+        if(m==4||m==6||m==9||m==11){
             if(d>=1&&d<=30){
                 return true;
             }
