@@ -3,7 +3,7 @@ public class Main {
     public static boolean isMagicString(String x){
         char[] arr = new char[x.length()];
         int count = 0;
-        for(int i=0;i<x.length()-1;i++){
+        for(int i=0;i<x.length();i++){
             arr[i]=x.charAt(i);
         }
         for(int i=0;i<x.length()-1;i++){
