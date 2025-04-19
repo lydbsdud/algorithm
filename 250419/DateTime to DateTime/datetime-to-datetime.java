@@ -15,6 +15,7 @@ public class Main {
             int totalB = C+B*60+A*60*24;
             if(totalA>totalB){
                 System.out.print(-1);
+                break;
             }
             if(day==A&&h==B&&m==C){
                 System.out.print(min);
