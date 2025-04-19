@@ -13,10 +13,13 @@ public class Main {
         while(true){
             if(11>A){
                 System.out.print(-1);
+                break;
             }else if(11>B){
                 System.out.print(-1);
+                break;
             }else if(11>C){
                 System.out.print(-1);
+                break;
             }
             if(day==A&&h==B&&m==C){
                 System.out.print(min);
