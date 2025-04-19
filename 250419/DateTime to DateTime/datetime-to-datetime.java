@@ -11,15 +11,10 @@ public class Main {
         int h = 11;
         int m =11;
         while(true){
-            if(11>A){
+            int totalA = 11+11*60+11*60*24;
+            int totalB = C+B*60+A*60*24;
+            if(totalA>totalB){
                 System.out.print(-1);
-                break;
-            }else if(11>B){
-                System.out.print(-1);
-                break;
-            }else if(11>C){
-                System.out.print(-1);
-                break;
             }
             if(day==A&&h==B&&m==C){
                 System.out.print(min);
