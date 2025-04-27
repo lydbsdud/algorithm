@@ -15,7 +15,7 @@ public class Main {
             }
         }
         int max = 0;
-        for(int i = 100;i<201;i++){
+        for(int i = 0;i<201;i++){
             if(arr[i]>max){
                 max=arr[i];
             }
