@@ -12,18 +12,36 @@ public class Main {
             int x = sc.nextInt();
             char d = sc.next().charAt(0);
             if(d=='R'){
-                for(int j=k;j<k+x;j++){
-                    arr[0][j]++;
-                    arr[1][j] = 100;
+                if(arr[1][k-1]==100){
+                    for(int j=k+1;j<=k+x;j++){
+                        arr[0][j]++;
+                        arr[1][j] = 100;
+                    }
+                    k=k+x;
                 }
-                k=k+x-1;
+                else{
+                    for(int j=k;j<k+x;j++){
+                        arr[0][j]++;
+                        arr[1][j] = 100;
+                    }
+                    k=k+x-1;
+                }
             }
             if(d=='L'){
-                for(int j=k;j>k-x;j--){
+                if(arr[1][k-1]==-100){
+                    for(int j=k-1;j>=k-x;j--){
                     arr[0][j]++;
                     arr[1][j] =-100;
                 }
-                k=k-x+1;
+                    k=k-x;
+                }
+                else{
+                    for(int j=k;j>k-x;j--){
+                    arr[0][j]++;
+                    arr[1][j] =-100;
+                    }
+                    k=k-x+1;
+                }
             }
         }
         for(int i=0;i<200001;i++){
