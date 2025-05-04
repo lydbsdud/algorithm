@@ -22,7 +22,7 @@ public class Main {
 
     public static int F(int ax1, int ay1, int ax2, int ay2,
     int bx1, int by1, int bx2, int by2){
-        if(ax2<=bx1&&ay2<=by1){
+        if(ax2<=bx1||ay2<=by1||ax1>=bx2||ay1>=by2){
             return 0;
         }
         int x = Math.min(ax2,bx2)-Math.max(ax1,bx1);
