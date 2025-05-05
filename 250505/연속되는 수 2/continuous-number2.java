@@ -8,16 +8,18 @@ public class Main {
         for (int i = 0; i < n; i++) {
             arr[i] = sc.nextInt();
         }
-        int count = 1;
+        int count = 0;
         int sum = 1;
         for (int i = 0; i < n; i++) {
             if(i==0||arr[i]==arr[i-1]){
                 count++;
-                continue;
             }
-            if(sum<count){
+            else if(sum<count){
                 sum = count;
                 count = 1;
+            }
+            if(i==n-1 && sum<count){
+                sum=count;
             }
         }
         System.out.print(sum);
