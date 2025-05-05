@@ -17,9 +17,10 @@ public class Main {
             }
             if(sum<count){
                 sum = count;
+                count = 1;
             }
         }
-        System.out.print(count);
+        System.out.print(sum);
 
     }
 }
