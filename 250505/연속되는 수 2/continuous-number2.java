@@ -14,12 +14,11 @@ public class Main {
             if(i==0||arr[i]==arr[i-1]){
                 count++;
             }
-            else if(sum<count){
-                sum = count;
+            else{
                 count = 1;
             }
-            if(i==n-1 && sum<count){
-                sum=count;
+            if(sum<count){
+                sum = count;
             }
         }
         System.out.print(sum);
