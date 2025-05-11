@@ -20,7 +20,7 @@ public class Main {
         
     }
     public static int[] W(int n){
-        int[] arr = new int[1000];
+        int[] arr = new int[1000000];
         time = 0;
         int where = 0;
         for(int i=0;i<n;i++){
