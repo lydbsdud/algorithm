@@ -8,7 +8,7 @@ public class Main {
         int k = sc.nextInt();
         int[] studentNum = new int [n+1];
         for(int i=1;i<=n;i++){
-            studentNum[i] = i;
+            studentNum[i] = 0;
         }
         int[] penalizedPerson = new int[m];
         for (int i = 0; i < m; i++) {
