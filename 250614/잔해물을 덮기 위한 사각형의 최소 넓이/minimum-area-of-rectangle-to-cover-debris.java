@@ -27,6 +27,7 @@ public class Main {
         int minX = 2000;
         int maxY = 0;
         int minY = 2000;
+        int count = 0;
         for(int i=0;i<2001;i++){
             for(int j = 0;j<2001;j++){
                 if(xy[i][j]==1){
@@ -42,10 +43,15 @@ public class Main {
                     if(j>maxY){
                         maxY=j;
                     }
+                    count++;
                 }
             }
         
         }
-        System.out.print((maxX-minX+1)*(maxY-minY+1));
+        if(count == 0 ){
+            System.out.print(0);
+        }else{
+            System.out.print((maxX-minX+1)*(maxY-minY+1));
+        }  
     }
 }
