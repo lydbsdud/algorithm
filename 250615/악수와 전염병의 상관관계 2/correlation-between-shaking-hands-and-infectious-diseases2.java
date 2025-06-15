@@ -26,17 +26,17 @@ public class Main {
                 a[n][1]--;
                 continue;
             }
-            else if(isCaX || isCaY){
-                if(isCaX){
-                    a[m][1]--;
-                    a[n][0]=1;
-                    a[n][1]=K;
-                }
-                else{
-                    a[n][1]--;
-                    a[m][0]=1;
-                    a[m][1]=K;
-                }
+            else if(isCaX){
+                a[m][1]--;
+                a[n][0]=1;
+                a[n][1]=K;
+                continue;
+            }
+            else if(isCaY){
+                a[n][1]--;
+                a[m][0]=1;
+                a[m][1]=K;
+                continue;
             }
         }
         for(int i=0;i<N;i++){
