@@ -6,8 +6,8 @@ public class Main {
         int m = sc.nextInt();
         int[][] a = new int[n][2];
         int[][] b = new int[m][2];
-        int[] A = new int[1000];
-        int[] B = new int[1000];
+        int[] A = new int[1001];
+        int[] B = new int[1001];
         int aT = 0;
         int aW = 0;
         int bT = 0;
