@@ -15,34 +15,28 @@ public class Main {
         Arrays.sort(shakes, (x, y) -> Integer.compare(x[0], y[0]));
         int[][] a = new int[N][2];
         a[P-1][0]=1;
-        a[P-1][1]=2;
-        for(int i=0; i<T;i++){
-            if(a[shakes[i][1]-1][0]==1){
-                if(a[shakes[i][2]-1][0]==1){
-                    a[shakes[i][1]-1][1]--;
-                    a[shakes[i][2]-1][0]--;
-                }else{
-                    if(a[shakes[i][1]-1][1]<1){
-                        a[shakes[i][2]-1][0]=0;
-                    }
-                    else{
-                        a[shakes[i][1]-1][1]--;
-                        a[shakes[i][2]-1][0]=1;
-                        a[shakes[i][2]-1][1]=2;
-                    }
-                }
-            }else if(a[shakes[i][2]-1][0]==1){
-                if(a[shakes[i][2]-1][1]<1){
-                    a[shakes[i][1]-1][0]=0;
+        a[P-1][1]=K;
+        for(int i=0;i<T;i++){
+            int m = shakes[i][1]-1;
+            int n = shakes[i][2]-1;
+            boolean isCaX = (a[m][0]==1)&&(a[m][1]>0);
+            boolean isCaY = (a[n][0]==1)&&(a[n][1]>0);
+            if(isCaX && isCaY){
+                a[m][1]--;
+                a[n][1]--;
+                continue;
+            }
+            if(isCaX || isCaY){
+                if(isCaX){
+                    a[m][1]--;
+                    a[n][0]=1;
+                    a[n][1]=K;
                 }
                 else{
-                    a[shakes[i][1]-1][0]=1;
-                    a[shakes[i][1]-1][1]=2;
-                    a[shakes[i][2]-1][1]--;
+                    a[n][1]--;
+                    a[m][0]=1;
+                    a[m][1]=K;
                 }
-            }else{
-                a[shakes[i][1]-1][0]=0;
-                a[shakes[i][2]-1][0]=0;
             }
         }
         for(int i=0;i<N;i++){
