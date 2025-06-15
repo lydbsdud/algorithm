@@ -26,7 +26,7 @@ public class Main {
                 a[n][1]--;
                 continue;
             }
-            if(isCaX || isCaY){
+            else if(isCaX || isCaY){
                 if(isCaX){
                     a[m][1]--;
                     a[n][0]=1;
