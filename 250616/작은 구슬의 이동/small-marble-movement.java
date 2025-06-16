@@ -26,7 +26,7 @@ public class Main {
         int nx = R;
         int ny = C;
         for (int i=0; i<T;i++){
-            if(ny==4&&dir==1){
+            if(ny==N&&dir==1){
                 dir = 2;
                 continue;
             }
@@ -38,7 +38,7 @@ public class Main {
                 dir = 0;
                 continue;
             }
-            if(nx==4&&dir==0){
+            if(nx==N&&dir==0){
                 dir = 3;
                 continue;
             }
