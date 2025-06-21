@@ -29,7 +29,11 @@ public class Main {
                 if(nx==0&& ny==0){
                     k = t;
                     System.out.print(k);
+                    break;
                 }
+            }
+            if(k>0){
+                break;
             }
         }
         if(k==-1){
