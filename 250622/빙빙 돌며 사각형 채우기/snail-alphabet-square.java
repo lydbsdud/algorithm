@@ -26,8 +26,8 @@ public class Main {
             x = x+dx[dir];
             y = y+dy[dir];
             k++;
-            if(k=='a'){
-                k='A';
+            if (k > 'Z') {
+                k = 'A';
             }
             xy[x][y]=k;
             nx = x;
