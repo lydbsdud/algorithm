@@ -1,5 +1,6 @@
 import java.util.*;
 public class Main {
+    public static final int INT_MAX = Integer.MAX_VALUE;
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
@@ -7,7 +8,7 @@ public class Main {
         for (int i = 0; i < n; i++) {
             a[i] = sc.nextInt();
         }
-        int minSum = 1000;
+        int minSum = INT_MAX;
         for (int i=0; i<n; i++){
             int sum = 0;
             for(int t=0 ; t<n;t++){
