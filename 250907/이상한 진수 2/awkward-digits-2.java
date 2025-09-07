@@ -23,6 +23,11 @@ public class Main {
                     break;
                 }
             }
+            if(t==-1 && i==a.length()-1){
+                result+=k*0;
+                k*=2;
+                continue;
+            }
             if(i==t){
                 result+=k*1;
                 k*=2;
