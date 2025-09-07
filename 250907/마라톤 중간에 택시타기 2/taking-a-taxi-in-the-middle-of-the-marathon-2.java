@@ -10,23 +10,19 @@ public class Main {
             x[i] = sc.nextInt();
             y[i] = sc.nextInt();
         }
-        int t = -1;
         int max = 0;
         int result = 0;
+        for(int i=0;i<n-1;i++){
+            result += Math.abs(x[i+1]-x[i])+Math.abs(y[i+1]-y[i]);
+        }
         for(int i=0;i<n-2;i++){
-            if(Math.abs(x[i+1]-x[i])+Math.abs(y[i+1]-y[i])>max){
-                max = Math.abs(x[i+1]-x[i])+Math.abs(y[i+1]-y[i]);
-                t = i;
-            }
+            int run1 = Math.abs(x[i+1]-x[i])+Math.abs(y[i+1]-y[i]);
+            int run2 = Math.abs(x[i+2]-x[i+1])+Math.abs(y[i+2]-y[i+1]);
+            int skip = Math.abs(x[i+2]-x[i])+Math.abs(y[i+2]-y[i]);
+            int skipDistance = (run1+run2) - skip;
+            max = Math.max(skipDistance, max);
         }
-        for(int i = 0;i<n-1;i++){
-            if(i == t){
-                result+=Math.abs(x[i+2]-x[i])+Math.abs(y[i+2]-y[i]);
-                i++;
-                continue;
-            }
-            result+=Math.abs(x[i+1]-x[i])+Math.abs(y[i+1]-y[i]);
-        }
-        System.out.print(result);
+        
+        System.out.print(result-max);
     }
 }
