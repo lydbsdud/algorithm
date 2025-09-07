@@ -3,7 +3,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String a = sc.next();
-        int t = 0;
+        int t = -1;
         for(int i=0;i<a.length();i++){
             if(a.charAt(i)=='0'){
                 t = i;
