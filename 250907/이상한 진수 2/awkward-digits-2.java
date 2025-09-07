@@ -13,6 +13,16 @@ public class Main {
         int result = 0;
         int k = 1;
         for(int i=a.length()-1;i>=0;i--){
+            if(a.length()==1){
+                if(a.charAt(0)=='0'){
+                    result = 1;
+                    break;
+                }
+                else{
+                    result = 0;
+                    break;
+                }
+            }
             if(i==t){
                 result+=k*1;
                 k*=2;
