@@ -1,4 +1,3 @@
-// 최대 이용자수 : m 서버 한 대가 운영 가능한 시간 : k
 class Solution {
     public int solution(int[] players, int m, int k) {
         int count = 0;
